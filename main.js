@@ -1,7 +1,7 @@
 'use strict';
 const { app, BrowserWindow } = require('electron');
 const { PythonShell } = require('python-shell');
-require('electron-reload')('../');
+
 function createWindow () {
     
   const win = new BrowserWindow({
@@ -31,7 +31,3 @@ app.on('activate', () => {
   }
  
 });
-PythonShell.runString('hello.py', null, function (err) {
-    if (err) throw err;
-    console.log('finished');
-  });

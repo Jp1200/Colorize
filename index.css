@@ -62,7 +62,7 @@ header {
   align-self: center;
   background-color: #3c474b;
 }
-body p {
+.about p {
   color: #fff;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 20px;
