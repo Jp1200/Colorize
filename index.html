@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Colorize</title>
     <link rel="stylesheet" href="index.css">
+    
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 </head>
 <body>
-    <script src="./node_modules/dropzone/index.js"></script>
+    
     <header>
         <h1>Colorizer<img src="./imgs/Colorize_logo.png" height="90px" width="90px"></h1>
         <ul class="nav">
@@ -21,12 +22,11 @@
    
     <h2>Drag and drop photos to start the colorizing process</h2>
     <div class='main-div'>
-        <form action="/file-upload" class="dropzone">
-            <div class="fallback">
-              <input name="file" type="file" multiple />
-            </div>
+        <form> 
+            <input name="file" type="file" id="file" class="dropzone"/>
+            <label for="file">|||</label>
         </form>
-        
+      
     </div>
     <div id="AboutMeHTML" style="visibility:hidden;" class="about">
         <p>This App revolves around the latest machine learning algorithm 
