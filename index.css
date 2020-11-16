@@ -6,11 +6,64 @@
   --main-5-color: blue;
   --main-6-color: purple;
   --main-7-color: violet;
+  --color-black: #040404;
+  --color-2-black: #000;
+  --color-3-black: #656565;
 }
-body {
-  background-color: #000;
+.gradient-body {
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(316deg, #000000, #353535);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  -o-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
 }
-
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 9% 0%;
+  }
+  50% {
+    background-position: 92% 100%;
+  }
+  100% {
+    background-position: 9% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 9% 0%;
+  }
+  50% {
+    background-position: 92% 100%;
+  }
+  100% {
+    background-position: 9% 0%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 9% 0%;
+  }
+  50% {
+    background-position: 92% 100%;
+  }
+  100% {
+    background-position: 9% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 9% 0%;
+  }
+  50% {
+    background-position: 92% 100%;
+  }
+  100% {
+    background-position: 9% 0%;
+  }
+}
 body h1 {
   color: #fff;
   font-family: "Helvetica Neue", sans-serif;
@@ -144,17 +197,4 @@ Powder Blue: #C0E0DE
   100% {
     border-color: var(--main-7-color);
   }
-}
-.gradient {
-  --magic-rainbow-color-1: hsl(0deg, 96%, 55%);
-  --magic-rainbow-color-2: hsl(25deg, 100%, 50%);
-  --magic-rainbow-color-3: hsl(40deg, 100%, 50%);
-  background: linear-gradient(
-    170deg,
-    var(--magic-rainbow-color-1),
-    var(--magic-rainbow-color-2)
-  );
-  /* 🤯 */
-  transition: --magic-rainbow-color-1 1000ms linear,
-    --magic-rainbow-color-2 1000ms linear, --magic-rainbow-color-3 1000ms linear;
 }
