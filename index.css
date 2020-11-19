@@ -178,9 +178,9 @@ header {
   animation: rainbow-bg 14s infinite;
   width: 240px;
 }
-.main-div .button:active {
+.main-div .button:focus {
   box-shadow: none;
-  outline: hidden;
+  outline: none;
 }
 .about p {
   color: #fff;
