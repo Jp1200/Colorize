@@ -168,10 +168,11 @@ header {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  background-color: inherit;
   font-size: 14pt;
   text-shadow: 2px 2px 4px #000;
   color: #fff;
-  transition: width 1s ease-in;
+  transition: width 0.4s ease-in;
 }
 .main-div .button:hover {
   cursor: pointer;

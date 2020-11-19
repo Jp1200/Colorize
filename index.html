@@ -10,6 +10,15 @@
 </head>
 <body class="gradient-body">
     <script src='./index.js'></script>
+    <script>
+        var loadFile = function(event) {
+          var output = document.getElementById('output');
+          output.src = URL.createObjectURL(event.target.files[0]);
+          output.onload = function() {
+            URL.revokeObjectURL(output.src) // free memory
+          }
+        };
+      </script>
     <header>
         <h1>Colorizer<img src="./imgs/Colorize_logo.png" height="90px" width="90px"></h1>
         <ul class="nav">
@@ -24,16 +33,17 @@
     <h2>Drag and drop photos to start the colorizing process</h2>
     <div class='main-div'>
         <form> 
-            <input name="file" type="file" id="file" class="dropzone"/>
-            <label for="file"></label>
+            <input name="file" type="file" id="file" class="dropzone" accept="image/*" onchange="loadFile(event)"/>
+            <label for="file"><img width="200px" height="200px" id="output"/></label>
             <button id='btn' class="button" type="submit">Colorize</button>
         </form>
-      
+        <div id="AboutMeHTML" style="visibility:hidden;" class="about">
+            <p>This App revolves around the latest machine learning algorithm 
+            designed for color reproduction to at least a 90% accuracy.</p>
+        </div>
+        <div id="ContactHTML" style="visibility:hidden;">This is contact HTML</div>
+
     </div>
-    <div id="AboutMeHTML" style="visibility:hidden;" class="about">
-        <p>This App revolves around the latest machine learning algorithm 
-        designed for color reproduction to at least a 90% accuracy.</p>
-    </div>
-<div id="ContactHTML" style="visibility:hidden;">This is contact HTML</div>
+    
 </body>
 </html>
