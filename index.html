@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Colorize</title>
     <link rel="stylesheet" href="index.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 </head>
 <body class="gradient-body">
-    
+    <script src='./index.js'></script>
     <header>
         <h1>Colorizer<img src="./imgs/Colorize_logo.png" height="90px" width="90px"></h1>
         <ul class="nav">
@@ -25,7 +26,7 @@
         <form> 
             <input name="file" type="file" id="file" class="dropzone"/>
             <label for="file"></label>
-            <button class="button" type="submit">Colorize</button>
+            <button id='btn' class="button" type="submit">Colorize</button>
         </form>
       
     </div>
