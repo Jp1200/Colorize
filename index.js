@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const file = document.getElementById('file');
     const btn = document.getElementById('btn');
     const mainDiv = document.getElementsByClassName("main-div")
+    let selection;
     btn.addEventListener('click', (event)=>{
 
         event.preventDefault();
@@ -16,9 +17,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
             alert("No file selected");
         }
     });
-    about.addEventListener('clicked', ()=>{
+    about.addEventListener('clicked', (event)=>{
         
-        document.getElementById('AboutMeHTML').style = ""
+        document.getElementById('AboutMeHTML').style = "visibility:1"
     });
     home.addEventListener('click', ()=>{
 
