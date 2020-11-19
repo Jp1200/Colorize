@@ -199,14 +199,18 @@ header {
   text-align: center;
   text-justify: inter-word;
 }
+.contact p {
+  color: #fff;
+  font-size: 20pt;
+  text-align: left;
+  margin-left: 5em;
+}
 /* Color schemes
 Dark Jungle Green: #162521
 Charcoal: #3C474B 
 Middle Blue Green: #9EEFE5 
 Steel Blue: #4F7CAC
 Powder Blue: #C0E0DE
-
-
 */
 @keyframes rainbow {
   0% {

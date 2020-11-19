@@ -11,20 +11,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         event.preventDefault();
         if (file){
-            console.log(file);
+            console.log(file.src);
         }
         else{
             alert("No file selected");
         }
     });
-    about.addEventListener('clicked', (event)=>{
-        
+    // handle link logic
+    about.addEventListener('click', ()=>{
+        document.getElementById("ContactHTML").style="visibility:hidden"
+        document.getElementById('form').style='visibility:hidden'
         document.getElementById('AboutMeHTML').style = "visibility:1"
     });
     home.addEventListener('click', ()=>{
-
+        document.getElementById("ContactHTML").style="visibility:hidden"
+        document.getElementById("form").style="visibility:1"
+        document.getElementById("AboutMeHTML").style = "visibility:hidden"
     });
-    contact.addEventListener('clicked', ()=>{
-
+    contact.addEventListener('click', ()=>{
+        document.getElementById("ContactHTML").style="visibility:1"
+        document.getElementById("form").style="visibility:hidden"
+        document.getElementById("AboutMeHTML").style = "visibility:hidden"
     });
 });
